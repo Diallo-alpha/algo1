@@ -1,0 +1,24 @@
+ALGORITHM compt pharase
+VAR
+    phras:STRING;
+    nbrV: char;
+    nbrM: INTEGER
+    nbrV=0;
+    nbrM=0;
+BEGIN
+write(phras)
+read pharase
+while(phras !='.')
+if (phras==" "){
+    nbrM++
+}
+else if(phras='e'||'a'||'o'||'u'||'y'||'i'){
+    nbrV++
+}
+END_IF
+read phras
+END_while
+write("nombre de voyel est" nbrV);
+write("nombre de mots est:"  nbrM);
+
+END
